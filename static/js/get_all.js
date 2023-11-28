@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para obtener la lista de dispositivos desde el backend
     async function obtenerDispositivos() {
-        const response = await fetch('https://8000-aldojesusma-iotdevicesb-3qwmkddg76d.ws-us106.gitpod.io/iot');
+        const response = await fetch('https://8000-gustavodelr-apidispobac-1jetfsxwqsx.ws-us106.gitpod.io/iot');
         const dispositivos = await response.json();
 
         // Limpia la lista de dispositivos antes de actualizarla
