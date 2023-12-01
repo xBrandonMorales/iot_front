@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const valueInput = document.getElementById("value");
 
     // Realiza una solicitud para obtener detalles del dispositivo con el ID proporcionado
-    fetch(`https://8000-gustavodelr-apidispobac-1jetfsxwqsx.ws-us106.gitpod.io/editar/${encodeURIComponent(id)}`)
+    fetch(`https://8000-xbrandonmorales-iotback-9rm8evlawma.ws-us106.gitpod.io/editar/${encodeURIComponent(id)}`)
         .then(response => response.json())
         .then(data => {
             // Llena los campos del formulario con los detalles del dispositivo
@@ -31,7 +31,7 @@ function actualizar() {
     const id = params.get("id");
 
     // Realiza una solicitud PUT para actualizar el dispositivo en el backend
-    fetch(`https://8000-gustavodelr-apidispobac-1jetfsxwqsx.ws-us106.gitpod.io/editar/${encodeURIComponent(id)}`, {
+    fetch(`https://8000-xbrandonmorales-iotback-9rm8evlawma.ws-us106.gitpod.io/editar/${encodeURIComponent(id)}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
