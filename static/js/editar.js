@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const valueInput = document.getElementById("value");
 
     // Realiza una solicitud para obtener detalles del dispositivo con el ID proporcionado
-    fetch(`https://8000-xbrandonmorales-iotback-9rm8evlawma.ws-us106.gitpod.io/iot/${encodeURIComponent(id)}`)
+    fetch(`https://8000-xbrandonmorales-iotback-9rm8evlawma.ws-us106.gitpod.io/iot${encodeURIComponent(id)}`)
         .then(response => response.json())
         .then(data => {
             // Llena los campos del formulario con los detalles del dispositivo
